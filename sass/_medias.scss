@@ -1,0 +1,265 @@
+@media (max-width: 896px){
+    .imgprincipalDesktop{
+        display: none;
+    }
+
+    .desktop_non{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px){
+
+    @keyframes movimiento{
+        0%{
+            transform: rotateY(0);
+        }
+        20%{
+            transform: rotateY(280deg);
+        }
+        40%{
+            transform: translateX(-150px)
+            rotateY(90deg);
+        }
+        60%{
+            transform: translateX(0)
+            rotateY(0);
+        }
+        80%{
+            transform: translateX(150px)
+            rotateY(90deg);
+        }
+        100%{
+            transform: translateX(0)
+            rotateY(0);
+        }
+    }
+
+    @keyframes players{
+        0%{
+            transform: rotateY(0);
+        }
+        100%{
+            transform: rotateY(360deg);
+        }
+    }
+
+    header{
+        display: flex;
+        justify-content: space-around;
+    }
+    header div img:hover{
+        cursor: pointer;
+        animation: movimiento 2500ms;
+    }
+    header .hamburguer{
+        display: none;
+    }
+
+    header .nav_top{
+        display: flex;
+    }
+    header .nav_top ul{
+        display: flex;
+    }
+    header .nav_top ul li{
+        margin: 10px;
+    }
+    header .nav_top ul li a{
+        color: #1E1E26;
+        font-weight: 500;
+    }
+    header .nav_top ul li a:hover{
+        transition: 90ms;
+        color: #a9a9a9;
+    }
+
+    header .button_top{
+        display: inline;
+        align-self: self-end;
+        background-color:#8B48BF;
+        border: none;
+        border-radius: 20px;
+        width: 134px;
+        height: 44px;
+        color: #FFF;
+    }
+    .button_mod a{
+        color: #FFF;
+    }
+    .button_top:hover{
+        transition: 90ms;
+        background-color: #9555c6;
+    }
+
+    main .imgPrincipal{
+        display: none;
+    }
+    .ad{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      padding: 70px 100px;
+      margin: 32.43px;
+    }
+    .imgprincipalDesktop{
+        width: 65%;
+        display: flex;
+    }
+    .imgprincipalDesktop img{
+        width: 70%;
+    }
+    .contenedor{
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ad button:hover{
+        transition: 90ms;
+        background-color: #9555c6;
+    }
+
+    .blue_part{
+        background-color: #8B48BF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .blue_part article h2{
+        margin: 0;
+        width: 500px;
+    }
+    .blue_part .desktop_non{
+        display: none;
+    }
+    .blue_part .desktop_blue p{
+        width: 450px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    /* LIST */
+    .list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #fafafa;
+    }
+    .contenedor_de_lista{
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        margin: 40px;
+    }
+    .headline{
+        position: relative;
+        right: 125px;
+        gap: 20px;
+        background-color: #fafafa;
+    }
+
+    .non{
+        margin: 150px;
+    }
+    
+    .best_desktop{
+        display: flex;
+        background-color: #fafafa;
+        margin-bottom: 150px;
+    }
+    .best img{
+        position: relative;
+        bottom: 150px;
+    }
+    .best_desktop .lebron{
+        order: 1;
+    }
+    .best_desktop .navarro{
+        order: 1;
+    }
+    .best img:hover{
+        animation: players 2500ms;
+    }
+    .lebron button{
+        position: relative;
+        top: 190px;
+    }
+    
+    .more_info{
+        display: flex;
+        justify-content: space-around;       
+    }
+    .more_info h2{
+        margin-bottom: 0px;
+        text-align: left;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .more_info span{
+        display: inline;
+    }
+    .more_info button{
+        background-color: #FFF;
+    }
+    .more_info button a{
+        color: #8B48BF;
+    }
+    .more_info button:hover{
+        transition: 90ms;
+        background-color: #232C50;
+        color: #FFF;
+    }
+    .more_info button a:hover{
+        color: #FFF;
+        transition: 2ms;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .logo, .socials{
+        order: 1;
+    }
+    .socials{
+        align-self: self-end;
+        position: relative;
+        right: 175px;
+    }
+    .socials a{
+        font-size: 23px;
+        margin: 10px;
+    }
+    .nav-links{
+        order: 1;
+        display: flex;
+        justify-content: center;
+        gap: 280px;
+    }
+    .nav-links ul li{
+        font-size: 18px;
+    }
+    #subscription{
+        align-self: self-start;
+    }
+    #subscription input{
+        width: 250px;
+        padding: 10px;
+    }
+    #subscription input:valid{
+        border: 2px solid #9555c6;
+    }
+    #subscription input:invalid{
+        border: 2px solid red;
+    }
+    #subscription button{
+        cursor: pointer;
+    }
+    .copyright{
+        align-self: self-end;
+        position: relative;
+        left: 370px;
+    }
+}
